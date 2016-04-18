@@ -27,6 +27,6 @@ public class Elipse extends Figura {
 
 	@Override
 	public void desenha(Graphics g) {
-		g.drawOval(x, x, largura, altura);
+		g.drawOval(x, y, largura, altura);
 	}
 }
