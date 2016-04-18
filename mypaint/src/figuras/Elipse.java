@@ -1,3 +1,4 @@
+
 package figuras;
 
 import java.awt.Graphics;
@@ -29,4 +30,6 @@ public class Elipse extends Figura {
 	public void desenha(Graphics g) {
 		g.drawOval(x, y, largura, altura);
 	}
+	
 }
+

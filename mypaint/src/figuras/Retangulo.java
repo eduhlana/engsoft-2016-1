@@ -1,5 +1,6 @@
 package figuras;
 
+import java.awt.Color;
 import java.awt.Graphics;
 
 public class Retangulo extends Figura {
@@ -27,6 +28,7 @@ public class Retangulo extends Figura {
 
 	@Override
 	public void desenha(Graphics g) {
+		g.setColor(Color.MAGENTA);
 		g.drawRect(x, y, largura, altura);
 	}
 

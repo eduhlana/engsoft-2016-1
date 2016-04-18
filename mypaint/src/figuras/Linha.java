@@ -1,5 +1,6 @@
 package figuras;
 
+import java.awt.Color;
 import java.awt.Graphics;
 
 public class Linha extends Figura {
@@ -15,6 +16,7 @@ public class Linha extends Figura {
 
 	@Override
 	public void desenha(Graphics g) {
+		g.setColor(Color.GREEN);
 		g.drawLine(x, y, x2, y2);
 	}
 }
