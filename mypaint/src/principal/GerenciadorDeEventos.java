@@ -2,13 +2,14 @@ package principal;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.List;
 
 import figuras.Figura;
 
 public class GerenciadorDeEventos extends MouseAdapter {
 
 	private AreaDeDesenho area;
-
+	private List<Figura> figuras;
 	private int x1 = 0;
 	private int y1 = 0;
 	private Ferramenta ferramenta;
@@ -22,8 +23,8 @@ public class GerenciadorDeEventos extends MouseAdapter {
 	}
 
 	public void limpaAreaDeDesenho() {
-		// TODO: limpar a área de desenho e chamar repaint
-	}
+		this.figuras.clear();	
+		}
 	
 	@Override
 	public void mouseDragged(MouseEvent e) {
