@@ -9,21 +9,21 @@ import figuras.Figura;
 public class GerenciadorDeEventos extends MouseAdapter {
 
 	private AreaDeDesenho area;
-	private List<Figura> figuras;
 	private int x1 = 0;
 	private int y1 = 0;
 	private Ferramenta ferramenta;
 
 	public GerenciadorDeEventos(AreaDeDesenho area) {
-		this.area = area;
+		this.area= area;
 	}
-
+		
 	public void setFerramenta(Ferramenta ferramenta) {
 		this.ferramenta = ferramenta;
 	}
 
 	public void limpaAreaDeDesenho() {
-		this.figuras.clear();	
+		this.area.limpa();
+		this.area.repaint();	
 		}
 	
 	@Override
